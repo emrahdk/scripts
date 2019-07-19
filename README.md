@@ -1,5 +1,7 @@
 # Scripts and helpful commands
 
+[TOC]
+
 ##  Git
 
 ### Syncing
@@ -38,17 +40,20 @@ git branch -m <new-name>
 
 ### Commits
 
-### Reset to head
+#### Reset to head
+
 ```bash
 git reset --hard HEAD
 ```
 
-### Reset to commit
+#### Reset to commit
+
 ```bash
 git reset --hard <commit sha>
 ```
 
-### Partially revert commit
+#### Partially revert commit
+
 ```bash
 git revert <bad-commit-sha> --no-commit
 git reset
@@ -58,22 +63,23 @@ git checkout .
 git commit
 ```
 
-### Stage all changes and commit
-```
+#### Stage all changes and commit
+
+```bash
 git commit -a -m <message>
 ```
 
 ---
 
-##  Environment paths
+##  Environment paths (on Windows)
 
 ### Set environment variable for user
-```bash
+```powershell
 setx <key> <value>
 ```
 
 ### Set environment variable system wide
-```bash
+```powershell
 setx <key> <value> /M
 ```
 
@@ -81,14 +87,15 @@ setx <key> <value> /M
 
 ## NuGet
 
-#### Pack and build release with symbols
-```bash
+### Pack and build release with symbols
+
+```powershell
 nuget pack <project>.csproj -Build -Symbols -Properties Configuration=<configuration>
 ```
 
-#### Update assembly redirects
+### Update assembly redirects
+
 _In Package Manager Console_
 ```powershell
 Get-Project -All | Add-BindingRedirect
 ```
-
