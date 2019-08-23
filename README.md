@@ -99,3 +99,11 @@ _In Package Manager Console_
 ```powershell
 Get-Project -All | Add-BindingRedirect
 ```
+
+## WSL (Windows Subsystem Linux)
+
+### Setup with Windows Credentials Manager
+
+```bash
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe"
+```
