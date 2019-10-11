@@ -1,7 +1,5 @@
 # Scripts and helpful commands
 
-[TOC]
-
 ##  Git
 
 ### Syncing
@@ -36,6 +34,11 @@ git push origin :<remote-branch-name>
 #### Rename local branch
 ```bash
 git branch -m <new-name>
+```
+
+#### Create and checkout branch
+```bash
+git checkout -b <branch_name>
 ```
 
 ### Commits
