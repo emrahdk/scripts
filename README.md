@@ -122,3 +122,8 @@ Get-Project -All | Add-BindingRedirect
 ```bash
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe"
 ```
+
+### Fix file line breaks
+```bash
+dos2unix.exe -b <FILE>
+```
