@@ -19,6 +19,17 @@ git push <REMOTE> --tags
 git fetch -p
 ```
 
+#### Clean up repo
+_Dry run_
+```bash
+git clean --dry-run
+```
+
+_Force and remove directories_
+```bash
+git clean -f -d
+```
+
 ### Branch
 
 #### Delete local branch
