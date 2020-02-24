@@ -72,6 +72,18 @@ git commit
 git commit -a -m <message>
 ```
 
+### Remote
+
+#### List remotes
+```bash
+git remote -v
+```
+
+#### Remove remote
+```bash
+git remote rm <REMOTE>
+```
+
 ---
 
 ##  Environment paths (on Windows)
