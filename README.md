@@ -6,17 +6,22 @@
 
 #### Push all branches to remote
 ```bash
-git push <REMOTE> --all
+git push --all
 ```
 
 #### Push all tags to remote
 ```bash
-git push <REMOTE> --tags
+git push --tags
 ```
 
 #### Fetch and remove non-existing branches on remote
 ```bash
 git fetch -p
+```
+
+#### Prune and fetch tags
+```bash
+git tag -l | xargs git tag -d && git fetch -t
 ```
 
 #### Clean up repo
@@ -97,7 +102,7 @@ git remote rm <REMOTE>
 
 ---
 
-##  Environment paths (on Windows)
+## Environment paths (on Windows)
 
 ### Set environment variable for user
 ```powershell
@@ -137,4 +142,44 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 ### Fix file line breaks
 ```bash
 dos2unix.exe -b <FILE>
+```
+
+## Linux specific things
+
+### Enable ports on RHEL / CentOS
+
+#### List currently open ports
+```bash
+firewall-cmd --list-ports
+```
+
+#### List zones
+```bash
+firewall-cmd --get-zones
+```
+
+#### List the zone containing eth0
+```bash
+firewall-cmd --get-zone-of-interface=eth0
+```
+
+#### Open TCP port
+```bash
+firewall-cmd --add-port <PORT>/tcp
+```
+
+#### Open TCP port permenantly
+```bash
+firewall-cmd --permanent --add-port 1191/tcp
+```
+
+#### Open a range of TCP ports
+```bash
+firewall-cmd --permanent --add-port 60000-61000/tcp
+```
+
+#### Restart the firewall
+```bash
+systemctl stop firewalld
+systemctl start firewalld
 ```
