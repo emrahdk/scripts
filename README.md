@@ -131,6 +131,8 @@ _In Package Manager Console_
 Get-Project -All | Add-BindingRedirect
 ```
 
+---
+
 ## WSL (Windows Subsystem Linux)
 
 ### Setup with Windows Credentials Manager
@@ -143,6 +145,8 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 ```bash
 dos2unix.exe -b <FILE>
 ```
+
+---
 
 ## Linux specific things
 
@@ -182,4 +186,14 @@ firewall-cmd --permanent --add-port 60000-61000/tcp
 ```bash
 systemctl stop firewalld
 systemctl start firewalld
+```
+
+---
+
+## BASH
+
+### Create multiple files at once
+```bash
+touch somefile.{js,css,txt}
+touch product-{image,description,options}.js
 ```
