@@ -124,6 +124,11 @@ setx <key> <value> /M
 nuget pack <project>.csproj -Build -Symbols -Properties Configuration=<configuration>
 ```
 
+#### Pack using `dotnet`
+```bash
+dotnet pack --include-symbols -c <configuration>
+```
+
 ### Update assembly redirects
 
 _In Package Manager Console_
