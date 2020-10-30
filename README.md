@@ -202,3 +202,11 @@ systemctl start firewalld
 touch somefile.{js,css,txt}
 touch product-{image,description,options}.js
 ```
+
+---
+
+## WCF / SOAP things
+_Use `Developer Command Prompt for VS 2019` to get af hold of `svcutil`_
+```bash
+svcutil http://example.service.dk/?wsdl=wsdl2 /out:MyService.cs /ct:System.Collections.Generic.List`1 /n:http://example.service.dk/Something/2020/10/,Some.Namespace.MyService
+```
