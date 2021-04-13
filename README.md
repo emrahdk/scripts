@@ -203,6 +203,29 @@ touch somefile.{js,css,txt}
 touch product-{image,description,options}.js
 ```
 
+### Locate stuff
+```bash
+locate my.file
+```
+
+### Transfer via SSH / SCP
+#### General
+```bash
+scp /path/to/file.blob /path/to/destination/
+```
+
+#### With credentials
+```bash
+scp /path/to/file username@machine:/path/to/destination
+```
+_Other direction_
+```bash
+scp username@machine:/path/to/file /path/to/destination
+```
+
+#### Notes
+Add `-r` for recursive and `-p` for preserving system metadata
+
 ---
 
 ## WCF / SOAP things
