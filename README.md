@@ -223,10 +223,21 @@ _Other direction_
 scp username@machine:/path/to/file /path/to/destination
 ```
 
+#### Through a proxy (from Origin to Proxy to Destination)
+```bash
+scp -r -o 'ProxyCommand ssh user@proxy %h %p' path/at/origin/ user@destination:/path/at/destination/
+```
+
 #### Notes
 Add `-r` for recursive and `-p` for preserving system metadata
 
 ---
+
+### SSH
+#### Send commands through a proxy (from Origin to Proxy to Destination)
+```bash
+ssh -J user@proxy user@destination 'cd /home && ls -a'
+```
 
 ## WCF / SOAP things
 _Use `Developer Command Prompt for VS 2019` to get af hold of `svcutil`_
