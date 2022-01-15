@@ -37,8 +37,11 @@
     - `git config pull.rebase true`
 
 ## Configure terminal
-1. Install terminator 
-3. Add CSS customization
+1. Install ZSH: `sudo apt install zsh`
+2. Install Oh My Zsh
+3. Use the Oxide theme
+4. Install terminator 
+5. Add CSS customization
 
 ## Install apps
 1. Brave
