@@ -39,7 +39,8 @@
 ## Configure terminal
 1. Install ZSH: `sudo apt install zsh`
 2. Install Oh My Zsh
-3. Use the Oxide theme
+    1. Use the Oxide theme
+    2. Install ZSH Autosuggestions
 4. Install terminator 
 5. Add CSS customization
 
