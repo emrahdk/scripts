@@ -24,6 +24,12 @@
     2. `sudo apt install gnome-shell-extension-autohidetopbar`
 2. Add Burn My Windows 
     1. Install from GNOME extensins    
+3. Switch to High Performance profile
+    1. Open Startup Applications
+    2. Add the following command `system76-power profile performance`
+4. Change ALT-Tab to Switch windows
+    1.  Settings > Keyboard > Keyboard Shortcuts >Customize Shortcuts
+    2.  Search for "Switch windows" and change it
 
 ## Configure Git
 1. Set up SSH
@@ -31,8 +37,8 @@
     - `git config pull.rebase true`
 
 ## Configure terminal
-1. Install terminator
-2. Add CSS customization
+1. Install terminator 
+3. Add CSS customization
 
 ## Install apps
 1. Brave
