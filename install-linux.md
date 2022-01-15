@@ -30,6 +30,7 @@
 4. Change ALT-Tab to Switch windows
     1.  Settings > Keyboard > Keyboard Shortcuts >Customize Shortcuts
     2.  Search for "Switch windows" and change it
+5. Install Fira Code font: https://github.com/tonsky/FiraCode
 
 ## Configure Git
 1. Set up SSH
