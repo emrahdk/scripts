@@ -30,7 +30,12 @@
 4. Change ALT-Tab to Switch windows
     1.  Settings > Keyboard > Keyboard Shortcuts >Customize Shortcuts
     2.  Search for "Switch windows" and change it
-5. Install Fira Code font: https://github.com/tonsky/FiraCode
+5. Fix Fn-keys for Keychron K3 
+    1. `touch /etc/modprobe.d/hid_apple.conf`
+    2. Add following and save: `options hid_apple fnmode=2`
+    3. `sudo update-initramfs -u`
+    4 Reboot 
+6. Install Fira Code font: https://github.com/tonsky/FiraCode
 
 ## Configure Git
 1. Set up SSH
