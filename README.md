@@ -239,6 +239,11 @@ Add `-r` for recursive and `-p` for preserving system metadata
 ssh -J user@proxy user@destination 'cd /home && ls -a'
 ```
 
+#### Copy ID to remote server for quick authentication
+```bash
+ssh-copy-id <remote>
+```
+
 ## WCF / SOAP things
 _Use `Developer Command Prompt for VS 2019` to get af hold of `svcutil`_
 ```bash
