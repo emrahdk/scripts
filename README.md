@@ -100,6 +100,16 @@ git remote -v
 git remote rm <REMOTE>
 ```
 
+#### Save stash as patch and applying it
+Saving
+```bash
+git stash show 1 --patch > example.patch
+```
+Applying
+```bash
+git apply --3way example.patch
+```
+
 ---
 
 ## Environment paths (on Windows)
